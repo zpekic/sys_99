@@ -3,7 +3,7 @@
 30 REM ---------------------------------------------------------
 40 REM https://archive.org/details/InterfaceAge198006/page/n131/mode/2up?q=benchmark
 50 REM ---------------------------------------------------------
-60 REM TMS9995 @12MHz: ??s
+60 REM TMS9995 @12MHz: 690s
 70 REM SYS_99  @12MHz: ??
 80 REM ---------------------------------------------------------
 99 F=3.0E6: BASE 7904: CRB(0)=1: CRB(1) = 1: MWD(65530)=-1
@@ -16,7 +16,7 @@
 180		IF L=0 THEN GOTO 230
 190 		IF L=1 THEN GOTO 220
 200 		IF M>L THEN GOTO 220 
-410 		IF M=L THEN GOTO 240
+210 		IF M=L THEN GOTO 240
 220 	NEXT K
 230	PRINT N,
 240 NEXT N
